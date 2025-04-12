@@ -1,0 +1,83 @@
+<section id="цель-работы" class="slide level1">
+<h1>Цель работы</h1>
+<p>Изучить возможности протокола STP и его модификаций по обеспечению
+отказоустойчивости сети, агрегированию интерфейсов и перераспределению
+нагрузки между ними.</p>
+</section>
+<section id="выполнение-работы" class="slide level1">
+<h1>Выполнение работы</h1>
+<h2 id="открытие-проекта">Открытие проекта</h2>
+<ul>
+<li>Открыть проект <code>lab_PT-08.pkt</code>.</li>
+<li>Сохранить его под именем <code>lab_PT-09.pkt</code>.</li>
+<li>Открыть для дальнейшего редактирования.</li>
+</ul>
+<figure>
+<img
+data-src="C:\Users\User\OneDrive\Рабочий%20стол\labs\lab09\screenshots\Снимок%20экрана%202025-04-12%20120227.png"
+alt="Рис. 1.1. Открытие проекта lab_PT-09.pkt" />
+<figcaption aria-hidden="true">Рис. 1.1. Открытие проекта
+lab_PT-09.pkt</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="резервное-соединение">Резервное соединение</h2>
+<ul>
+<li>Заменить соединение между
+<code>msk-donskaya-ddlesnukhin-sw-1 (gig0/2)</code> и
+<code>msk-donskaya-ddlesnukhin-sw-3 (gig0/2)</code>.</li>
+</ul>
+<figure>
+<img
+data-src="C:\Users\User\OneDrive\Рабочий%20стол\labs\lab09\screenshots\Снимок%20экрана%202025-04-12%20120755.png"
+alt="Рис. 1.2. Формирование резервного соединения между коммутаторами." />
+<figcaption aria-hidden="true">Рис. 1.2. Формирование резервного
+соединения между коммутаторами.</figcaption>
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="настройка-портов">Настройка портов</h2>
+<ol type="1">
+<li><p>Настроить порт на <code>Gig0/2</code> коммутатора как транковый.
+<img
+data-src="C:\Users\User\OneDrive\Рабочий%20стол\labs\lab09\screenshots\Снимок%20экрана%202025-04-12%20120957.png"
+alt="Рис. 1.3. Транковый режим." /></p></li>
+<li><p>Соединение через интерфейсы <code>Fa0/23</code>. <img
+data-src="C:\Users\User\OneDrive\Рабочий%20стол\labs\lab09\screenshots\Снимок%20экрана%202025-04-12%20121046.png"
+alt="Рис. 1.4. Соединение через Fa0/23." /></p></li>
+</ol>
+</section>
+<section class="slide level1">
+
+<h2 id="icmp-трафик">ICMP-трафик</h2>
+<ul>
+<li>Проверить ICMP-трафик с хоста <code>dk-donskaya-1</code> до
+<code>mail</code> и <code>web</code>.</li>
+</ul>
+<figure>
+<img
+data-src="C:\Users\User\OneDrive\Рабочий%20стол\labs\lab09\screenshots\Снимок%20экрана%202025-04-12%20121945.png"
+alt="Рис. 1.7. Ping сервера." />
+<figcaption aria-hidden="true">Рис. 1.7. Ping сервера.</figcaption>
+</figure>
+</section>
+<section id="вывод" class="slide level1">
+<h1>Вывод</h1>
+<p>В ходе выполнения лабораторной работы мы изучили:</p>
+<ol type="1">
+<li>Отказоустойчивость протокола STP.</li>
+<li>Преимущества Rapid PVST+.</li>
+<li>Принципы агрегирования интерфейсов.</li>
+</ol>
+</section>
+<section id="контрольные-вопросы" class="slide level1">
+<h1>Контрольные вопросы</h1>
+<ol type="1">
+<li>Какую информацию предоставляет команда состояния STP?</li>
+<li>Как включить режим Portfast?</li>
+<li>Какие отличия между LACP, PAgP и статическим агрегированием?</li>
+<li>Как проверить состояние EtherChannel?</li>
+</ol>
+</section>
